@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JKConfigPrivatePod_Example' do
+  pod 'JKConfigPrivatePod', :path => '../'
+
+  target 'JKConfigPrivatePod_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
